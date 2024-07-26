@@ -3,6 +3,7 @@ import { companies } from '../data'
 import logo from '../assets/images/logo.svg'
 
 const Footer = () => {
+  const fullYear = new Date().getFullYear()
   return (
     <div className="w-full flex flex-col">
       <div className="flex lg:flex-row flex-col lg:gap-0 gap-20 items-center justify-between lg:px-[310px] px-5">
@@ -52,12 +53,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-[70px] mt-[100px] flex items-center justify-center border-t border-border">
-        <span className="font-Source text-lg text-secondary font-light">
-          © 2024 Kofee. Developed by{' '}
-          <a href="https://www.youtube.com/channel/UCCW0Rmnu7AocSIcc0PUMH0Q" target="_blank" className="underline font-semibold">
-            Code It Down
-          </a>
-        </span>
+        <span className="font-Source text-lg text-secondary font-light">© {fullYear} Kofee. Developed by Me</span>
       </div>
     </div>
   )
